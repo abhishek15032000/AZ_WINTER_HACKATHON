@@ -15,7 +15,7 @@ let chatInitialized = 0;
 let hidden = 0;
 
 const AZ_PROBLEM_KEY = "AZ-AI";
-const API_KEY = "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"
+const API_KEY = ""
 
 let prevUrl = "";
 
