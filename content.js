@@ -246,7 +246,7 @@ async function makeApiRequest() {
                 messages: context,
             }),
         });
-        console.log('response',response);
+        
         if (!response.ok) {
             throw new Error(`Error: ${response.status} - ${response.statusText}`);
         }
@@ -299,8 +299,6 @@ function removeChatBox() {
         sendButtonImg = "";
     }
 }
-
-console.log('context',context);
 
 // Injects the chat box into the UI
 function injectChatBox() {
@@ -385,7 +383,6 @@ function injectChatBox() {
                 chatInitialized = 1;
                 hidden = 0;
 
-                console.log(chatInitialized, hidden);
             } else {
                 console.error('Failed to inject chat box: AI button not found.');
             }
