@@ -1,0 +1,22 @@
+<div id="custom-chatbox">
+  <div class = "bot-online">
+    <div>
+      <span class="text"> Ask Vivek </span>
+      <span class = "green-dot"></span>
+    </div>
+    <div>
+      <button id = "minimize-chatbox-btn" style = "border : none; margin-right: 10px; ">
+      </button>
+    </div>
+  </div>
+  <div id="chat-messages" style="overflow-y: auto; height: 90%;"></div>
+  <div style="display: flex; padding : 10px; justify-content: space-evenly; align-items: center;" >
+    <textarea id="user-input" placeholder="Ask a question..."></textarea>
+    <button id="send-button" style="padding: 5px 10px; max-height: 40px; max-width: 42px; border-color: transparent; background-color: transparent; ">
+      <img src = "" id = "send-button-img" style ="max-height: 30px; max-width: 30px;">
+    </button>
+  </div>
+  <div id="loader-container" style="display: none; justify-content: center; align-items: center;">
+    <span class="loader"></span>
+  </div>
+</div>
